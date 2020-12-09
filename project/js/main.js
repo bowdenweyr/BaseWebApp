@@ -1,11 +1,35 @@
 
-function myFunction() {
-  // use jQuery ($ is shorthand) to find the div on the page and then change the html
-  // jQuery can do a lot of crazy stuff so make sure to google around to find out more
+//$(document).ready(function(){
+//    getWeather();
+//})
 
-  $("#demo").html("NEWWW PARAGRAPH #javascript #fire");
+//function getWeather(searchQuery){
+//    var url = "http://api.openweathermap.org/data/2.5/weather?q=" + searchQuery + "&units=metric&appid=" + apiKey;
+//    $(".city").text("");
+//    $(".temp").text("");
+//    $(".error-message").text("");
 
-  // 'img-circle' is a bootstrap thing! Check out more here: http://getbootstrap.com/css/
-  $("#doge-image").append(`<img class="img-circle" src="images/wowdoge.jpeg" />`);
-}
+//    $.ajax(url, {
+//        success: function (data) {
+//            $(".city").text(data.name);
+//            $(".temp").text(data.main.temp);
+//            console.log(data);
+//        }, error: function (error) {
+//            $(".error-message").text("An error occured");
+//        }
+//    })
+//}
 
+//function searchWeather() {
+//    var searchQuery = $(".search").val();
+//    getWeather(searchQuery);
+//}
+
+Firebird.attach(options, function (err, db) {
+    if (err)
+        throw err;
+    db.query('Select Customer from Customermaster', function (err, result) {
+        console.log(result);
+        db.detach();
+    })
+});
