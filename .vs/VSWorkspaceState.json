@@ -4,8 +4,9 @@
     "\\project",
     "\\project\\html",
     "\\project\\html\\helpers",
-    "\\project\\html\\pages"
+    "\\project\\html\\pages",
+    "\\project\\js"
   ],
-  "SelectedNode": "\\project\\start.js",
+  "SelectedNode": "\\project\\js\\main.js",
   "PreviewInSolutionExplorer": false
 }
